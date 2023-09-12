@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h1>Проектування та розробка веб-застосувань</h1>
+    <h2>Лабораторна робота №1</h2>
+    <h2>Виконала студентка групи АнД-31</h2>
+    <h2>Білич Юлія Сергіївна</h2>
+    <a href="index.html">На головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для реєстрації студента у веб-системі.</p>
+    <p>Необхідно заповнити наступні данні:</p>
+    <ul>
+        <li><p>основні дані про студента, включають ПІБ, назву групи (вибирається із списку), форму навчання(бюджет або контакт) реалізується у вигляді перемикача, коротку інформацію про студента, електрона адреса студента;</p></li>
+        <li><p>особисті дані студента, включають дані паспорта, ідентифікаційний код, рік народження, стать (реалізується у вигляді перемикача).</p></li>
+    </ul>
+    <form>
+        <fieldset>
+            <legend>Основна інформація</legend>
+            <label>ПІБ
+                <input id="stud_name" type="text" required>
+            </label>
+            <label>Група
+                <select>
+                    <option>АнД-11</option>
+                    <option>АнД-21</option>
+                    <option>АнД-31</option>
+                    <option>АнД-41</option>
+                    <option>КН-11</option>
+                    <option>КН-21</option>
+                    <option>КН-31</option>
+                    <option>КН-41</option>
+                    <option>КН-12</option>
+                    <option>КН-22</option>
+                    <option>КН-32</option>
+                    <option>КН-42</option>
+                </select>
+            </label>
+            <label>Додаткова інформація
+                <input id="stud_inf" type="text">
+            </label>
+            <label>Електронна пошта
+                <input id="stud_email" type="email" required>
+            </label>
+            <label>Форма навчання
+                <input type="radio" name="form" value="b" checked> Бюджет
+                <input type="radio" name="form" value="k"> Контракт
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <label>Дані паспорта
+                <input id="passport" type="text">
+            </label>
+            <label>Ідентифікаційний код
+                <input id="id" type="number" max="9999999999">
+            </label>
+            <label>Рік народження
+                <input id="id" type="number" min="1910" max="2010">
+            </label>
+            <label>Стать
+                <input type="radio" name="sex" value="w" checked> Жіноча
+                <input type="radio" name="sex" value="m"> Чоловіча
+            </label>
+        </fieldset>
+        <button type="submit">Надіслати</button>
+
+
+    </form>
+    
+
+</body>
+</html>
+
+
